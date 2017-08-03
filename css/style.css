@@ -1,0 +1,40 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Quicksand' , sans-serif ;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: darkcyan;
+    text-decoration: underline;
+
+}
+
+ul {
+    list-style: none;
+}
+
+ol {
+
+}
+
+table {
+    border-spacing: 0.5em;
+
+}
+ td{
+     padding: 0.5em;
+ }
+
+td:nth-child(1) {
+    background: hsl(150, 50%, 50%);
+}
+
+.landing {
+    max-width: 100%;
+    height: auto;
+
+}
