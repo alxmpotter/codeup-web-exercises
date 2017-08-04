@@ -1,0 +1,44 @@
+h1{
+    text-decoration: underline;
+    color: purple;
+}
+
+.box {
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    height: 50px;
+    width: 150px;
+    margin: 10px;
+
+}
+
+#red {
+    background-color: red;
+
+}
+
+#orange {
+    background-color: orange;
+    margin-left: 30px;
+}
+
+#yellow {
+    background-color: yellow;
+    margin-left: 60px
+}
+
+#green {
+    background-color: green;
+    margin-left: 90px;
+ }
+
+#blue {
+    background-color: blue;
+    margin-left: 120px;
+}
+
+#purple {
+    background-color: purple;
+    margin-left: 150px;
+}
