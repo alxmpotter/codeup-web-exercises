@@ -24,7 +24,7 @@ h1{
 }
 
 #yellow {
-    background-color: yellow;
+    background-color: rgb(252, 238, 85);
     margin-left: 60px
 }
 
@@ -38,7 +38,7 @@ h1{
     margin-left: 120px;
 }
 
-#purple {
-    background-color: purple;
+#violet {
+    background-color: violet;
     margin-left: 150px;
 }

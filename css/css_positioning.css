@@ -4,43 +4,51 @@ h1{
     margin-bottom: 50px;
 }
 
+
 .box {
     color: white;
     font-weight: bold;
     border: 1px solid black;
     height: 50px;
     width:  50px;
-    margin: 10px;
+    margin-right: 50px;
+    margin-bottom: 50px;
     padding: 10px;
+    float: left;
+}
 
+.box>img {
+    position: relative;
+    left: 50px;
+    bottom: 100px;
 }
 
 #red {
     background-color: red;
-
 }
 
 #orange {
     background-color: orange;
-    margin-left: 30px;
 }
 
 #yellow {
-    background-color: yellow;
-    margin-left: 60px
+    background-color: #eade54;
+    clear: left;
+
 }
 
 #green {
     background-color: green;
-    margin-left: 90px;
+
 }
 
 #blue {
     background-color: blue;
-    margin-left: 120px;
+    clear: left;
+
 }
 
-#purple {
-    background-color: purple;
-    margin-left: 150px;
+#violet {
+    background-color: violet;
+
 }
