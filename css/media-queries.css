@@ -1,17 +1,11 @@
 /*formatting for grid exercise*/
-body {
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
 h1 {
     margin-top: 0;
 }
 
 li {
     display: inline-block;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .hidden-on-mobile {
@@ -35,9 +29,8 @@ li {
 
 .main {
     float: left;
-    /*width: 60%;*/
+    /*!*width: 60%;*!*/
     text-align: match-parent;
-    box-sizing: border-box;
     padding: 15px;
 
 }
@@ -47,17 +40,11 @@ li {
     /*width: 40%;*/
     font-style: italic;
     text-align: match-parent;
-    box-sizing: border-box;
     padding: 15px;
 }
 
-footer {
-    margin-top: 500px;
-
-}
-
-@media screen and (max-width: 339px) {
-    .alert-info  {
+@media screen and (max-width: 360px) {
+    .alert-info {
         display: block;
         border: 1px solid gray;
         background-color: #CCFFFF;
@@ -66,7 +53,7 @@ footer {
 
     }
 
-    .alert-info>a {
+    .alert-info > a {
         text-decoration: none;
         font-color: #000;
 
@@ -82,30 +69,17 @@ footer {
 
     li {
         display: block;
-        border: 1px solid #ccc;
         background-color: #ccc;
         padding: 10px;
         margin-bottom: 10px;
-        font-family: Arial;
+
     }
 
     .nav-links {
-        list-style-type: none;
-        float: right;
+        /*list-style-type: none;*/
+        /*float: right;*/
         /*width: 100%;*/
         text-align: center;
     }
-
-    .main {
-        box-sizing: border-box;
-        /*width: 100%;*/
-
-    }
-    .sub-section {
-        box-sizing: border-box;
-        /*width: 100%;*/
-
-    }
-
 
 }

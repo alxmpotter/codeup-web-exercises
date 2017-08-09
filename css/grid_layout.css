@@ -1,13 +1,14 @@
 .container {
     margin: auto;
     width: 90%;
+    font-family: sans-serif;
 
 }
 
 .row {
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    /*margin-bottom: 20px;*/
+    /*margin-top: 10px;*/
 
 }
 
@@ -20,10 +21,10 @@
 .column {
     float: left;
     box-sizing: border-box;
+    /*border: 1px solid black;*/
 }
 
 .one-half {
-    /*border: 1px solid;*/
     /*background-color: lightseagreen;*/
     width: 50%;
 }
@@ -33,34 +34,34 @@
 }
 
 .one-third {
-    /*border: 1px solid;*/
     /*background-color: darkcyan;*/
     width: 33.33%;
 }
 
 .one-fourth {
-    /*border: 1px solid;*/
     /*background-color: chartreuse;*/
     width: 25%;
 }
 
 .one-sixth {
-    /*border: 1px solid;*/
     /*background-color: forestgreen;*/
     width: 16.66%;
 
 }
 
 .one-eighth {
-    /*border: 1px solid;*/
     /*background-color: olive;*/
     width: 12.5%;
 }
 
 @media screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+    }
+
     .column.one-half, .column.one-third,
     .column.one-fourth, .column.one-sixth,
-    .column.one-eighth {
+    .column.one-eighth .column.two-thirds {
         width: 100%;
     }
 
