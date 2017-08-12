@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+
+.cdup-logo {
+    margin-top: -50px;
+    text-align: center;
+
+}
+
+.jumbo-bar {
+    height: 16px;
+    margin-top: 35px;
+
+}
+
+.logo-title {
+    font-family: 'Abel';
+}
