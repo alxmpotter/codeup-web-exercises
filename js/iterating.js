@@ -1,5 +1,12 @@
 (function(){
     "use strict";
+    var names = ["Luke", "Han Solo", "Chewbaca", "Leia"];
+
+
+
+
+
+
 
     // TODO: Create an array of 4 people's names using literal array notation, in a variable called 'names'.
 
@@ -7,3 +14,5 @@
 
     // TODO: Create log statements that will print each of the names array elements individually.
 })();
+
+
