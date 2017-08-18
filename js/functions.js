@@ -1,6 +1,4 @@
-(function () {
-
-    "use strict";
+"use strict";
 
 //say hello function-------------------
 
@@ -22,8 +20,7 @@
 
 
     function isOdd(number) {
-        var x = (number % 2 == 1) ? number + " is odd." : number + " is even.";
-        return x;
+        return (number % 2 == 1) ? number + " is odd." : number + " is even.";
     }
 
     console.log(isOdd(random));
@@ -61,8 +58,8 @@
     var billTotal = prompt("What's your bill total?");
     var tipPercent = prompt("What percentage would you like to tip?");
 
-    function calculateTip(bill, tip) {
-        var tipAmount = (bill * tip) / 100;
+    function calculateTip(bill, percentage) {
+        var tipAmount = (bill * percentage) / 100;
         return tipAmount;
     }
 
@@ -71,5 +68,3 @@
     }
 
     alert("$" + calculateTip(billTotal, tipPercent));
-
-})();
