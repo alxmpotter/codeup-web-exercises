@@ -65,12 +65,18 @@ console.log(isOdd(random));
  *  > calculateTip(0.20, 20) // returns 4
  */
 
+var bill = Math.floor(Math.random() * 180) + 20;
+var tip = Math.floor(Math.random() * 40) + 10;
+
+console.log("Total bill = $" + bill);
+console.log("Percentage you'd like to tip = " + tip + "%");
+
 function calculateTip(tip, bill) {
     var tipAmount = (bill * tip) / 100;
     return tipAmount;
 }
 
-console.log(calculateTip(.20, 100));
+console.log("Amount to tip = $" + calculateTip(tip, bill));
 
 /**
  * TODO: use prompt and alert in combination with your calculateTip function to
@@ -82,4 +88,9 @@ var billTotal = prompt("What's your bill total?");
 
 var tipPercent = prompt("What percentage would you like to tip?");
 
-alert(calculateTip(tipPercent, billTotal));
+if (tipPercent <= 15) {
+    alert("Really? That's pretty low, but ok...");
+}
+
+alert("$" + calculateTip(tipPercent, billTotal));
+
