@@ -1,6 +1,8 @@
 (function(){
     "use strict";
-    var names = ["Luke", "Han Solo", "Chewbaca", "Leia"];
+    var names = ["Luke", "Han-Solo", "Chewbaca", "Leia"];
+
+    console.log(names.length);
 
 
 

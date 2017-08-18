@@ -1,10 +1,11 @@
-(function() {
+(function () {
+
     "use strict";
 
 //say hello function-------------------
 
     function sayHello(name) {
-        return "Hello " + name;
+        return "Hello " + name + "!";
     }
 
     var myName = "Alex";
@@ -30,29 +31,45 @@
 
 //calculate tip function-----------
 
-    var bill = Math.floor(Math.random() * 180) + 20;
-    var tip = Math.floor(Math.random() * 40) + 10;
-
-    console.log("Total bill = $" + bill);
-    console.log("Percentage you'd like to tip = " + tip + "%");
-
-    function calculateTip(tip, bill) {
-        var tipAmount = (bill * tip) / 100;
-        return tipAmount;
-    }
-
-    console.log("Amount to tip = $" + calculateTip(tip, bill));
+    // var bill = Math.floor(Math.random() * 180) + 20;
+    // var tip = Math.floor(Math.random() * 40) + 10;
+    //
+    // console.log("Total bill = $" + bill);
+    // console.log("Percentage you'd like to tip = " + tip + "%");
+    //
+    // function calculateTip(tip, bill) {
+    //     var tipAmount = (bill * tip) / 100;
+    //     return tipAmount;
+    // }
+    //
+    // console.log("Amount to tip = $" + calculateTip(tip, bill));
 
 //bill, tip prompts--------------
 
-    var billTotal = prompt("What's your bill total?");
+    // var billTotal = prompt("What's your bill total?");
+    // var tipPercent = prompt("What percentage would you like to tip?");
+    //
+    // if (tipPercent <= 15) {
+    //     alert("Really? That's pretty low, but ok...");
+    // }
+    //
+    // alert("$" + calculateTip(tipPercent, billTotal));
 
+
+// tip calculator and function together---------
+
+    var billTotal = prompt("What's your bill total?");
     var tipPercent = prompt("What percentage would you like to tip?");
+
+    function calculateTip(bill, tip) {
+        var tipAmount = (bill * tip) / 100;
+        return tipAmount;
+    }
 
     if (tipPercent <= 15) {
         alert("Really? That's pretty low, but ok...");
     }
 
-    alert("$" + calculateTip(tipPercent, billTotal));
+    alert("$" + calculateTip(billTotal, tipPercent));
 
 })();
