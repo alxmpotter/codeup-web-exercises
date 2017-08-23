@@ -18,7 +18,7 @@
                 if (doRounding === true){
                     var circleArea = Math.round(this.getArea());
                 } else {
-                    var circlaArea = this.getArea();
+                    var circleArea = this.getArea();
                 }
                 // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
@@ -35,7 +35,7 @@
 
     console.log("=======================================================");
     // TODO: Change the radius of the circle to 5.
-
+    radius: 5,
     // log info about the circle
     console.log("Raw circle information");
     circle.logInfo(false);
