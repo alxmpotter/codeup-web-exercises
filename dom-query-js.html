@@ -7,6 +7,9 @@
 <body>
 
 <h1 id="main-header">Hello World!</h1>
+
+<button id="btn1" class="buttons" >click here: Something cool might happen.</button>
+
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -14,7 +17,13 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
+
+<button id="btn2" class="buttons" >Click it!</button>
+
 <h2 id="sub-header">Hello Again.</h2>
+
+<button id="btn3" class="buttons" >Feeling blue? Click here</button>
+
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -25,35 +34,71 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button id="btn4" class="buttons">Adios</button>
+
 <script>
     (function() {
         "use strict";
+        //declaring variables to target different sections of html
         var mainHeader = document.getElementById("main-header");
-
-        mainHeader.innerHTML = "JavaScript is Cool"
-
         var subHeader = document.getElementById("sub-header");
-
-        subHeader.style.color = "blue";
-
         var listItems = document.getElementsByTagName("li");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
 
-        for (var i = 0; i < listItems.length; i++) {
+//        var btn = document.getElementsByClassName("buttons");
+//        btn.addEventListener("click");
+
+        //using variables to implement different events when buttons are clicked
+        btn1.addEventListener("click", function(){
+            mainHeader.innerHTML = "JavaScript is Cool";
+        })
+
+        btn2.addEventListener("click", function(){
+            for (var i = 0; i < listItems.length; i++) {
             if (i % 2 === 0) {
                 listItems[i].style.color = "grey";
             } if (listItems[i].getAttribute("data-dbid") === "1") {
                 listItems[i].style.color = "blue";
             }
         }
+        })
 
-        /* different way to get every other list item grey--------
-        for (var i = 0; i < listItems; i += 2 ) {
-            listItems[i].style.color = "grey";
-         }
-        */
-        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+        btn3.addEventListener("click", function(){
+            subHeader.style.color = "blue";
+        })
 
-        subParagraphs[0].innerHTML = "Mission Accomplished!";
+        /*next steps, figure out how to make code better
+        * can you addEventListener to all buttons with one line?
+        * want to make the reverse happen with second click*/
+
+
+//----------------------------------------------------------------------
+        //first exercise
+//
+//        mainHeader.innerHTML = "JavaScript is Cool"
+//
+//
+//        subHeader.style.color = "blue";
+//
+//
+//        for (var i = 0; i < listItems.length; i++) {
+//            if (i % 2 === 0) {
+//                listItems[i].style.color = "grey";
+//            } if (listItems[i].getAttribute("data-dbid") === "1") {
+//                listItems[i].style.color = "blue";
+//            }
+//        }
+//
+//        /* different way to get every other list item grey--------
+//        for (var i = 0; i < listItems; i += 2 ) {
+//            listItems[i].style.color = "grey";
+//         }
+//        */
+//        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+//
+//        subParagraphs[0].innerHTML = "Mission Accomplished!";
 
     })();
 </script>
