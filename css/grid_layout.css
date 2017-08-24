@@ -7,8 +7,8 @@
 
 .row {
     width: 100%;
-    /*margin-bottom: 20px;*/
-    /*margin-top: 10px;*/
+    margin-bottom: 20px;
+    margin-top: 10px;
 
 }
 
@@ -21,11 +21,11 @@
 .column {
     float: left;
     box-sizing: border-box;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
 }
 
 .one-half {
-    /*background-color: lightseagreen;*/
+    background-color: lightseagreen;
     width: 50%;
 }
 
@@ -34,23 +34,23 @@
 }
 
 .one-third {
-    /*background-color: darkcyan;*/
+    background-color: darkcyan;
     width: 33.33%;
 }
 
 .one-fourth {
-    /*background-color: chartreuse;*/
+    background-color: chartreuse;
     width: 25%;
 }
 
 .one-sixth {
-    /*background-color: forestgreen;*/
+    background-color: forestgreen;
     width: 16.66%;
 
 }
 
 .one-eighth {
-    /*background-color: olive;*/
+    background-color: olive;
     width: 12.5%;
 }
 
