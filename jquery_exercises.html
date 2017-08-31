@@ -6,6 +6,32 @@
 </head>
 <body>
 
+<div id="container">
+    <h1 id="hello" class="headings">Oh hi there</h1>
+        <p>some stuff is about to happen using JQuery</p>
+
+        <button id="click" class="imabutton">click me</button>
+
+        <p class="info codeup"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores beatae dolor ea error eveniet hic, in inventore iusto, natus necessitatibus nemo repellat. Dignissimos dolorem illo incidunt porro quod, sit.</p>
+
+        <p id="2nd-paragraph" class="info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto blanditiis commodi dolor, eum explicabo facilis, magnam placeat quam repudiandae tempore ullam veniam voluptatum. Cupiditate enim eos odio odit saepe!</p>
+
+    <h1 id="list-heading" class="headings codeup">Movies You Should Watch</h1>
+
+        <ul id="first-list">
+            <li class="movie-list">Bladerunner</li>
+            <li class="movie-list">It Comes at Night</li>
+            <li class="movie-list">Cabin in the Woods</li>
+            <li class="movie-list">Wet Hot American Summer</li>
+            <li class="movie-list">Women on the Verge of a Nervous Breakdown</li>
+            <li class="movie-list">Bad Education</li>
+            <li class="movie-list">Y Tu Mama Tambien</li>
+        </ul>
+
+    <button class="imabutton">Whats gonna happen?</button>
+
+</div>
+
 
 <!--CDN JQuery library-->
 <!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
@@ -13,10 +39,38 @@
 <!--local JQuery library-->
 <script src="js/jquery-2.2.4.min.js"></script>
 <script>
-    "use strict";
-    $(document).ready(function(){
-        alert("hi");
-    });
+    (function(){
+
+        //change background color of h1 when clicked
+        var h1 = $("#hello");
+
+        h1.click(function(){
+           $(this).css("background-color", "green");
+        });
+
+        //change size of paragraph when double clicked
+        var paragraphs = $("p");
+
+        paragraphs.dblclick(function(){
+           $(this).css("font-size", "18px");
+        });
+
+        //change text color of li elements to red when hovering
+        var changeColorToRed = $("li");
+        console.log(changeColorToRed);
+
+        changeColorToRed.hover(
+            function() {
+                $(this).css("color", "red");
+            },
+            function() {
+                $(this).css("color", "black");
+            }
+        );
+
+
+    })();
+
 </script>
 
 </body>
