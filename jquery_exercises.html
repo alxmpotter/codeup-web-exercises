@@ -23,6 +23,9 @@
             <li class="movie-list">It Comes at Night</li>
             <li class="movie-list">Cabin in the Woods</li>
             <li class="movie-list">Wet Hot American Summer</li>
+            <li>Women on the Verge of a Nervous Breakdown</li>
+            <li>Bad Education</li>
+            <li>Y Tu Mama Tambien</li>
         </ul>
 
     <button class="imabutton">Whats gonna happen?</button>
@@ -38,21 +41,21 @@
 <script>
     (function(){
 
+        //change background color of h1 when clicked
         var h1 = $("#hello");
 
         h1.click(function(){
            $(this).css("background-color", "green");
         });
 
+        //change size of paragraph when double clicked
         var paragraphs = $("p");
 
         paragraphs.dblclick(function(){
            $(this).css("font-size", "18px");
         });
 
-//        var lists = $("li").html();
-//        console.log(lists);
-
+        //change text color of li elements to red when hovering
         var changeColorToRed = $("li");
         console.log(changeColorToRed);
 
@@ -61,7 +64,7 @@
                 $(this).css("color", "red");
             },
             function() {
-                $(this).css("color", "white");
+                $(this).css("color", "black");
             }
         );
 
