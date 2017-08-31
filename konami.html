@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami</title>
+</head>
+<body>
+
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script>
+    (function(){
+       "use strict";
+       $(document).keyup(function(event){
+           console.log(event.keyCode);
+           if(event.keyCode === 38){
+               console.log("the up arrow was pressed");
+              alert("almost there");
+           }
+       });
+
+//       $("body").on("keydown", function(){
+//          if (event.keyCode === 38){
+//          }
+//
+//       });
+
+    })();
+</script>
+</body>
+</html>
