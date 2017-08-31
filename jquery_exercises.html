@@ -16,7 +16,7 @@
 
         <p id="2nd-paragraph" class="info"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto blanditiis commodi dolor, eum explicabo facilis, magnam placeat quam repudiandae tempore ullam veniam voluptatum. Cupiditate enim eos odio odit saepe!</p>
 
-    <h2 id="list-heading" class="headings codeup">Movies You Should Watch</h2>
+    <h1 id="list-heading" class="headings codeup">Movies You Should Watch</h1>
 
         <ul id="first-list">
             <li class="movie-list">Bladerunner</li>
@@ -39,8 +39,9 @@
     "use strict";
     $(document).ready(function(){
 
-        $(".codeup").css("border", "1px solid red");
+        $("li").css({"font-size" : "20px", "list-style-type" : "none"});
 
+        $("h1, p, li").css("background-color", "yellow");
 
     });
 </script>
