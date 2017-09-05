@@ -14,9 +14,7 @@
         li {
             list-style: none;
         }
-        ul {
-            display: none;
-        }
+
     </style>
 </head>
 <body>
@@ -67,21 +65,21 @@
 
 <!--//traversing exercise-->
     <h3 class="park-facts-hide">Big Bend</h3>
-        <ul>
+        <ul class="invisible">
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
         </ul>
     <h3 class="park-facts-hide">Badlands</h3>
-        <ul>
+        <ul class="invisible">
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
         </ul>
     <h3 class="park-facts-hide">Yosemite</h3>
-        <ul>
+        <ul class="invisible">
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
@@ -89,7 +87,10 @@
         </ul>
     <button id="highlight">High-light Facts</button>
 
-    <h2 id="fade-in-register">Please register for the parks and wild life newsletter.</h2>
+    <div id="register-fade-in" class="invisible">
+        <h2>Please register for the parks and wild life newsletter.</h2>
+        <a href="#">click here!</a>
+    </div>
 
 
 
@@ -147,17 +148,20 @@
 
 //hide facts after h3's
         $(".park-facts-hide").click(function(){
-
-            if($(this).next().is(":visible")) {
-                $(this).next().slideUp();
-            } else {
-                $(this).next().slideDown();
-            }
-
+            $(this).next().slideToggle();
+//            if($(this).next().is(":visible")) {
+//                $(this).next().slideUp();
+//            } else {
+//                $(this).next().slideDown();
+//            }
         });
 
 //fade in registration header
-
+        var delay = 8000;
+        var registerFade = (function(){
+            $("#register-fade-in").fadeIn();
+        });
+        setTimeout(registerFade, delay);
 
     })();
 </script>
