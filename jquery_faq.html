@@ -11,9 +11,22 @@
             font-weight: bold;
             font-style: oblique;
         }
+        li {
+            list-style: none;
+        }
+        ul {
+            display: none;
+        }
     </style>
 </head>
 <body>
+<!--jquery effects exercise-->
+    <div id="hide-newsletter">
+        <h1>Would you like to sign up for our newsletter?</h1>
+        <span id="click-span">x</span>
+    </div>
+
+<!--//jquery attribute and css exercise-->
     <h1>FAQs National Parks</h1>
     <button id="showAnswers" href="">show answers</button>
 
@@ -51,21 +64,23 @@
             <dt class="questions">How do I reserve a tour in a park?</dt>
                 <dd class="invisible">You can book some park tours through Recreation.gov such as WWII Valor in the Pacific (Pearl Harbor), many Mammoth Cave National Park cave tours, Independence National Historical Park tours, and more. Not all parks participate in this reservation service. For more information on tours offered at a specific park, please see the park search.</dd>
         </dl>
-    <h3>Big Bend</h3>
+
+<!--//traversing exercise-->
+    <h3 class="park-facts-hide">Big Bend</h3>
         <ul>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
         </ul>
-    <h3>Badlands</h3>
+    <h3 class="park-facts-hide">Badlands</h3>
         <ul>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
         </ul>
-    <h3>Yosemite</h3>
+    <h3 class="park-facts-hide">Yosemite</h3>
         <ul>
             <li>lorem ipsum</li>
             <li>lorem ipsum</li>
@@ -73,6 +88,8 @@
             <li>lorem ipsum</li>
         </ul>
     <button id="highlight">High-light Facts</button>
+
+    <h2 id="fade-in-register">Please register for the parks and wild life newsletter.</h2>
 
 
 
@@ -122,6 +139,25 @@
         $("li").click(function(){
             $(this).parent().children().first().css("color", "blue");
         });
+
+//effects exercise, for div at top of page
+        $("#click-span").click(function(){
+            $("#hide-newsletter").hide();
+        });
+
+//hide facts after h3's
+        $(".park-facts-hide").click(function(){
+
+            if($(this).next().is(":visible")) {
+                $(this).next().slideUp();
+            } else {
+                $(this).next().slideDown();
+            }
+
+        });
+
+//fade in registration header
+
 
     })();
 </script>
