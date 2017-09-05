@@ -92,6 +92,11 @@
             $(this).css("background-color", "yellow");
         });
 
+
+//solution with link function
+        //$("#highlight").on("click", highlightLastItem);
+
+//anonymous function
         $("#highlight").click(function(){
             $("ul").each(function(index, element) {
                 $(this).children().last().css("background-color", "yellow");
@@ -99,12 +104,23 @@
 
         });
 
-        $("h3").click(function(){
-            $("ul").children().css("font-weight", "bold");
-        });
+//using a function with a name
+        $("h3").on("click", makeAllListItemsBold);
+
+        function makeAllListItemsBold(){
+            $(this).next().css("font-weight", "bold");
+        }
+
+
+//pre solution, made all li's bold when any h3 ws clicked
+//        $("h3").click(function(){
+//            $("ul").children().css("font-weight", "bold");
+//        });
+
+
 
         $("li").click(function(){
-            $("li").parent().css("color", "blue");
+            $(this).parent().children().first().css("color", "blue");
         });
 
     })();
