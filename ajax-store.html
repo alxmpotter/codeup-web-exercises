@@ -38,19 +38,22 @@
 (function() {
     "use strict";
 
-    $.ajax("data/inventory.json").done(function (data,status){
+    $.ajax("data/inventory.json").done(function (data){
         console.log(data);
-        console.log(status);
+//        console.log(status);
         buildTable(data);
     });
 
     function buildTable(tools) {
         tools.forEach(function (tool) {
+
             var table = "<tr>" +
                         "<td>" + tool.title + "</td>" +
                         "<td>" + tool.quantity + "</td>" +
                         "<td>" + tool.price + "</td>" +
-                        "<td>" + tool.categories + "</td>" + "</tr>";
+                        "<td>" + tool.categories + "</td>" +
+                        "</tr>";
+
             $("#insertProducts").append(table);
         });
     }
