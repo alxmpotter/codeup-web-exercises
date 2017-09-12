@@ -33,12 +33,12 @@ const users = [
 
 console.log(users);
 
-//return users that know 3 or more computer languages---------
+//use filter to return users that know 3 or more computer languages---------
 const moreThanThreeLanguages = users.filter(user => user.languages.length >= 3);
 console.log(moreThanThreeLanguages);
 
 //use map to create an array of strings that is ea users email--------
-let userEmail = users.map(user => user.email);
+const userEmail = users.map(user => user.email);
 console.log(userEmail);
 
-//reduce. transform array to object--------
+//use reduce to transform array to object--------
