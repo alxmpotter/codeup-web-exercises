@@ -34,7 +34,7 @@ wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
 function lastCommit(user, repo) {
 return fetch(`https://api.github.com/repos/${user}/${repo}/events`,
     { headers:
-        {"Authorization" : "token 02e7b36f39c8783bbaae6e025428cb42dff021df"}
+        {"Authorization" : "token MY_TOKEN"}
     })
     .then((response) => {
         return response.json();
